@@ -1,17 +1,17 @@
-# AppJima
+# YonkesPlus
 
 ### DEPENDENCIAS
 
-- install command line expo: npm install expo-cli --global
+- node.js
 
 ### RECOMENDACIONES
 
-- usar Prettier:
+- utilizar Prettier:
   buscar en complementos e instalarlo,
   habilitarlo en setting ( Editor:Format On Save )
-- tambien puede ser util el complemento React-Native/React/Redux snippet
 
 ### INICIAR EL PROYECTO
 
-- npm start
-- si no puedes iniciar la app trata de actualizar nodejs, npm upgrade
+- primero debes instalar las dependencias con npm install
+- npm run dev
+- en caso de no poder iniciar trata de actualizar nodejs, npm upgrade
