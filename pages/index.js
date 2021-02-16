@@ -7,9 +7,9 @@ const Index = () => {
   const [open, setOpen] = useState(false); // navbar
 
   return (
-    <div className="font-body">
+    <div>
       <Head>
-        <title>YonkesPlus | Inicio</title>
+        <title>YonkesPlus - Inicio</title>
       </Head>
       <div className="relative bg-white">
         <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
@@ -21,7 +21,7 @@ const Index = () => {
               <div className="flex items-center justify-between w-full md:w-auto">
                 <Link href="/">
                   <a>
-                    <Image src="/logo.svg" height={45} width={165} alt="logo" />
+                    <Image src="/logo.svg" height={47} width={160} alt="logo" />
                   </a>
                 </Link>
                 <div className="-mr-2 flex items-center md:hidden">
@@ -56,27 +56,27 @@ const Index = () => {
             </div>
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               <Link href="#">
-                <a className="tracking-wide font-medium text-gray-500 hover:text-gray-900">
+                <a className="tracking-wide text-gray-500 hover:text-gray-900">
                   Categorías
                 </a>
               </Link>
               <Link href="#">
-                <a className="tracking-wide font-medium text-gray-500 hover:text-gray-900">
+                <a className="tracking-wide text-gray-500 hover:text-gray-900">
                   Vehículo
                 </a>
               </Link>
               <Link href="#">
-                <a className="tracking-wide font-medium text-gray-500 hover:text-gray-900">
+                <a className="tracking-wide text-gray-500 hover:text-gray-900">
                   Mis compras
                 </a>
               </Link>
               <Link href="#">
-                <a className="tracking-wide font-medium text-gray-500 hover:text-gray-900">
+                <a className="tracking-wide text-gray-500 hover:text-gray-900">
                   Carrito
                 </a>
               </Link>
               <Link href="/login">
-                <a className="tracking-wide font-medium text-blue-600 hover:text-blue-500">
+                <a className="tracking-wide text-blue-600 hover:text-blue-500">
                   Ingresar
                 </a>
               </Link>
@@ -125,7 +125,7 @@ const Index = () => {
                 <div className="px-2 pt-2 pb-3 space-y-1" role="none">
                   <Link href="#">
                     <a
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      className="tracking-wide block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                       role="menuitem"
                     >
                       Categorías
@@ -133,7 +133,7 @@ const Index = () => {
                   </Link>
                   <Link href="#">
                     <a
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      className="tracking-wide block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                       role="menuitem"
                     >
                       Vehículo
@@ -141,7 +141,7 @@ const Index = () => {
                   </Link>
                   <Link href="#">
                     <a
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      className="tracking-wide block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                       role="menuitem"
                     >
                       Mis compras
@@ -149,7 +149,7 @@ const Index = () => {
                   </Link>
                   <Link href="#">
                     <a
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      className="tracking-wide block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                       role="menuitem"
                     >
                       Carrito
@@ -159,7 +159,7 @@ const Index = () => {
                 <div role="none">
                   <Link href="/login">
                     <a
-                      className="block w-full px-5 py-3 text-center font-medium text-blue-600 bg-gray-50 hover:bg-gray-100"
+                      className="tracking-wide block w-full px-5 py-3 text-center font-medium text-blue-600 bg-gray-50 hover:bg-gray-100"
                       role="menuitem"
                     >
                       Ingresar
