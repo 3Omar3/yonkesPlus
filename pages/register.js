@@ -12,7 +12,7 @@ const Register = () => {
         <title>YonkesPlus - Register</title>
       </Head>
       <main className="h-screen flex justify-center items-center tracking-wide  bg-gray-200">
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <Link href="#">
             <a className="text-sm text-blue-500 mb-5 self-end hover:text-blue-700">
               Crear una cuenta de empresa {">"}
