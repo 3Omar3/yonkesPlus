@@ -9,15 +9,8 @@ const Login = () => {
       <Head>
         <title>YonkesPlus - Login</title>
       </Head>
-      {/* <div className="bg-white shadow-sm p-1">
-        <Link href="/">
-          <a className="text-center">
-            <Image src="/logo.svg" height={47} width={160} alt="logo" />
-          </a>
-        </Link>
-      </div> */}
-      <main className="flex tracking-wide justify-center">
-        <div className="flex flex-col">
+      <main className="h-screen flex justify-center items-center tracking-wide bg-gray-200">
+        <div className="flex flex-col max-w-xl">
           <div className="flex flex-col rounded-lg bg-white shadow-lg p-5 px-10 m-auto mb-5">
             <Link href="/">
               <a className="w-max self-center">
@@ -73,11 +66,6 @@ const Login = () => {
           </button>
         </div>
       </main>
-      <style jsx global>{`
-        body {
-          background: #f0f2f5;
-        }
-      `}</style>
     </>
   );
 };
