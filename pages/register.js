@@ -11,20 +11,22 @@ const Register = () => {
       <Head>
         <title>YonkesPlus - Register</title>
       </Head>
-      <main className="h-screen flex justify-center items-center tracking-wide  bg-gray-200">
-        <div className="flex flex-col ">
+      <main className="h-screen flex justify-center items-center tracking-wide">
+        <div className="flex flex-col m-10">
           <Link href="#">
             <a className="text-sm text-blue-500 mb-5 self-end hover:text-blue-700">
               Crear una cuenta de empresa {">"}
             </a>
           </Link>
           <div className="rounded-lg bg-white shadow-lg p-10 max-w-xl pb-8 pt-6">
-            <Link href="/">
-              <a className="w-max self-center mb-2">
-                <Image src="/logo.svg" height={47} width={160} alt="logo" />
-              </a>
-            </Link>
-            <div className="flex flex-col md:flex-row mt-3 md:space-x-8">
+            <div className="text-center md:text-left">
+              <Link href="/">
+                <a className="flex-1 w-max self-center mb-2">
+                  <Image src="/logo.svg" height={50} width={165} alt="logo" />
+                </a>
+              </Link>
+            </div>
+            <div className="flex flex-col md:flex-row mt-5 md:space-x-8">
               <div className="mb-5 md:mb-0">
                 <label className="flex text-gray-500 p-1">Nombre</label>
                 <input
@@ -88,6 +90,11 @@ const Register = () => {
           </div>
         </div>
       </main>
+      <style global jsx>{`
+        body {
+          background: #e5e7eb;
+        }
+      `}</style>
     </>
   );
 };

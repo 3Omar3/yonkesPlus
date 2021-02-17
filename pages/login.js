@@ -9,15 +9,15 @@ const Login = () => {
       <Head>
         <title>YonkesPlus - Login</title>
       </Head>
-      <main className="h-screen flex justify-center items-center tracking-wide bg-gray-200">
-        <div className="flex flex-col max-w-xl">
-          <div className="flex flex-col rounded-lg bg-white shadow-lg p-5 px-10 m-auto mb-5">
+      <main className="h-screen flex justify-center items-center tracking-wide  bg-gray-200">
+        <div className="flex-1 max-w-sm m-10">
+          <div className="flex flex-col rounded-lg bg-white shadow-lg p-5 px-10 mb-5">
             <Link href="/">
               <a className="w-max self-center">
-                <Image src="/logo.svg" height={47} width={160} alt="logo" />
+                <Image src="/logo.svg" height={50} width={165} alt="logo" />
               </a>
             </Link>
-            <div className="flex flex-col my-4 mt-1">
+            <div className="flex flex-col my-4 mt-2">
               <input
                 type="email"
                 placeholder="Correo"
@@ -31,18 +31,18 @@ const Login = () => {
             </div>
             <button
               type="submit"
-              className="focus:outline-none text-white font-semibold rounded-lg bg-blue-500 shadow-md hover:bg-blue-600 tracking-wide p-1.5 sm:p-2"
+              className="focus:outline-none mt-2 text-white font-semibold rounded-lg bg-blue-500 shadow-md hover:bg-blue-600 tracking-wide p-1.5 sm:p-2"
             >
               Continuar
             </button>
-            <span className="text-blue-500 my-4 text-center">
+            <span className="text-blue-500 my-4 text-center hover:text-blue-700 cursor-pointer">
               ¿Has olvidado la contraseña?
             </span>
             <Link href="/register" className="my-8">
               <a className="text-green-500 text-center">Crear cuenta</a>
             </Link>
           </div>
-          <button className="flex items-baseline focus:outline-none hover:bg-gray-100 rounded-lg bg-white shadow-lg p-2.5 my-2 pl-5">
+          <button className="flex w-full items-baseline focus:outline-none hover:bg-gray-100 rounded-lg bg-white shadow-lg p-2.5 my-5 pl-5">
             <Image
               src="/google-icon.svg"
               height={22}
@@ -53,7 +53,7 @@ const Login = () => {
               Iniciar sesión con Google
             </span>
           </button>
-          <button className="flex items-baseline focus:outline-none hover:bg-gray-100 rounded-lg bg-white shadow-lg p-2.5 my-2 pl-5">
+          <button className="flex w-full items-baseline focus:outline-none hover:bg-gray-100 rounded-lg bg-white shadow-lg p-2.5 my-2 pl-5">
             <Image
               src="/facebook-icon.svg"
               height={22}
@@ -66,6 +66,11 @@ const Login = () => {
           </button>
         </div>
       </main>
+      <style global jsx>{`
+        body {
+          background: #e5e7eb;
+        }
+      `}</style>
     </>
   );
 };
