@@ -45,10 +45,7 @@ const Register = () => {
             <div className="flex flex-col md:flex-row md:space-x-8 md:mt-8">
               <div className="mb-5 md:mb-0">
                 <label className="flex text-gray-500 p-1">Email</label>
-                <input
-                  className="w-full text-gray-900 p-1 focus:outline-none border-b border-gray-300 focus:border-blue-400"
-                  type="email"
-                />
+                <input className="input-label" type="email" />
               </div>
               <div className="mb-5 md:mb-0">
                 <label className="flex text-gray-500 p-1">Clave</label>
