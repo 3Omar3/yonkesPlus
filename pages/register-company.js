@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
-const Register = () => {
+const RegisterCompany = () => {
   const [active, setActive] = useState(false); // btn confirmar
 
   return (
@@ -13,9 +13,9 @@ const Register = () => {
       </Head>
       <main className="h-screen flex justify-center items-center tracking-wide">
         <div className="flex flex-col m-10">
-          <Link href="/register-company">
+          <Link href="/register">
             <a className="text-sm text-blue-500 mb-5 self-end hover:text-blue-700">
-              Crear una cuenta de empresa {">"}
+              Crear una cuenta personal {">"}
             </a>
           </Link>
           <div className="rounded-lg bg-white shadow-lg p-10 max-w-xl pb-8 pt-6">
@@ -28,14 +28,14 @@ const Register = () => {
             </div>
             <div className="flex flex-col md:flex-row mt-5 md:space-x-8">
               <div className="mb-5 md:mb-0">
-                <label className="flex text-gray-500 p-1">Nombre</label>
+                <label className="flex text-gray-500 p-1">RFC</label>
                 <input
                   className="w-full text-gray-900 p-1 focus:outline-none border-b border-gray-300 focus:border-blue-400"
                   type="text"
                 />
               </div>
               <div className="mb-5 md:mb-0">
-                <label className="flex text-gray-500 p-1">Apellido</label>
+                <label className="flex text-gray-500 p-1">Razón social</label>
                 <input
                   className="w-full text-gray-900 p-1 focus:outline-none border-b border-gray-300 focus:border-blue-400"
                   type="text"
@@ -96,4 +96,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default RegisterCompany;
